@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Report</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        h4{
+            font-size: 20px;
+            text-transform: uppercase;
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color:rgb(240, 254, 255);
+            margin-top: 7px;
+            margin-bottom: 9px;
+        }
+        #report-container{
+            width: 500px;
+            height: 600px;
+            background-color: rgb(255, 174, 214);
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            filter: drop-shadow(0px 0px 10px grey);
+        }
+        #hero-image-container{
+            width: 500px;
+            height: 500px;
+            position: relative;
+        }
+        #city-text{
+           margin: 0;
+            position: absolute;
+            left: 10px;
+            bottom: 10px;
+            font-size: 40px;
+            color: rgba(100%, 100%, 100%, .8);
+            
+        }
+        #days-container{
+            background-color: rgb(9, 61, 63);
+            height: 100px;
+            font-size: 0;
+        }
+        .day{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(13, 102, 42);
+            display: inline-block;
+        }
+        .button:hover{
+            background-color:rgba(104, 252, 116, 0.829);
+        }
+        .button:active{
+            background-color: rgb(37, 185, 69);
+        }
+        .weather-icon{
+            width: 40px;
+            height: 40px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+<div id="report-container">
+<div id="hero-image-container">
+    <h4 id="city-text">Cheshunt</h4>
+    <img src="images/cedars-park small.jpg" alt="norwich">
+</div>
+<div id="days-container">
+    <div class="day button">
+        <h4>Mon</h4>
+        <img class="weather-icon" src="images/icons/100.svg" alt="">
+    </div>
+    <div class="day button">
+        <h4>Tue</h4>
+        <img class="weather-icon" src="images/icons/104.svg" alt="">
+    </div>
+    <div class="day button">
+        <h4>Wed</h4>
+        <img class="weather-icon" src="images/icons/151.svg" alt="">
+    </div>
+    <div class="day button">
+        <h4>Thur</h4>
+        <img class="weather-icon" src="images/icons/150.svg" alt="">
+    </div>
+    <div class="day button">
+        <h4>Fri</h4>
+        <img class="weather-icon" src="images/icons/101.svg" alt="">
+    </div>
+</div>
+</div>
+</body>
+
+</html>
